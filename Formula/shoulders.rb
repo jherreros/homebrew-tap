@@ -5,21 +5,21 @@
 class Shoulders < Formula
   desc "CLI for the Shoulders Internal Developer Platform"
   homepage "https://github.com/jherreros/shoulders"
-  version "0.2.3"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jherreros/shoulders/releases/download/v0.2.3/shoulders_0.2.3_darwin_amd64.tar.gz"
-      sha256 "9446cf81d9a4e58b0c5a9bf269711df250d5e394d746f33de74bc1b2d25a77aa"
+      url "https://github.com/jherreros/shoulders/releases/download/v0.3.0/shoulders_0.3.0_darwin_amd64.tar.gz"
+      sha256 "a11c508719c079ef3ed9f5acfe516b1d1665e5d958cf74d3088fbd12d976319c"
 
       define_method(:install) do
         bin.install "shoulders"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jherreros/shoulders/releases/download/v0.2.3/shoulders_0.2.3_darwin_arm64.tar.gz"
-      sha256 "ef9cbc307a3acebf1a86c92e9aad74f6d44649b56252a0fcc594eaaaea15c819"
+      url "https://github.com/jherreros/shoulders/releases/download/v0.3.0/shoulders_0.3.0_darwin_arm64.tar.gz"
+      sha256 "5469940cc8acd4412e290ad0b8a0c1f6fbd7557c3ddc3a3cb776929bf6d527bf"
 
       define_method(:install) do
         bin.install "shoulders"
@@ -29,15 +29,15 @@ class Shoulders < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jherreros/shoulders/releases/download/v0.2.3/shoulders_0.2.3_linux_amd64.tar.gz"
-      sha256 "fe80a6f6182e97c30b9f3806b1b23c3e7f346e367782683d73b7fbbf12bd1593"
+      url "https://github.com/jherreros/shoulders/releases/download/v0.3.0/shoulders_0.3.0_linux_amd64.tar.gz"
+      sha256 "e3ae3396e1d834bd230e76b30376e91b071fe66e82db53e7a9269a072ccd4bf4"
       define_method(:install) do
         bin.install "shoulders"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jherreros/shoulders/releases/download/v0.2.3/shoulders_0.2.3_linux_arm64.tar.gz"
-      sha256 "430578b7ef9514c4fddba4c34f09550cec2ab021d10a679b98cd9aa9d0fe4914"
+      url "https://github.com/jherreros/shoulders/releases/download/v0.3.0/shoulders_0.3.0_linux_arm64.tar.gz"
+      sha256 "3b48557c0ffbeaafe8ada77b21c3f1c591210f47d85a83876985a2bf4a611370"
       define_method(:install) do
         bin.install "shoulders"
       end
